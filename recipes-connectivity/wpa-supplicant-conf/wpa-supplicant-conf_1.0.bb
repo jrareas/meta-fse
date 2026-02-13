@@ -6,12 +6,12 @@ SRC_URI = " \
     file://wpa-supplicant.conf \
     "
 
-PACKAGE_ARCH:stm32mpcommon = "${MACHINE_ARCH}"
+#PACKAGE_ARCH:stm32mpcommon = "${MACHINE_ARCH}"
 
-SYSTEMD_PACKAGES += "${PN}"
+#SYSTEMD_PACKAGES += "${PN}"
 
 do_install() {
-    install -d ${D}/etc
+	install -d ${D}/etc
     install -m 0755  ${WORKDIR}/wpa-supplicant.conf ${D}/etc/wpa-supplicant.conf
 }
 

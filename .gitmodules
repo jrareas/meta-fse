@@ -1,0 +1,3 @@
+[submodule "recipes-app/bme280-driver"]
+	path = recipes-app/bme280-driver
+	url = https://github.com/jrareas/bme280-driver
